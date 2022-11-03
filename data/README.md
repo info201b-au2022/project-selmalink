@@ -1,24 +1,11 @@
-# The `\data` Directory: Project Data Summary 
+# The `\data` Directory: Project Data Summary
 
 In our project, we use the following data files and Application Programming Interfaces:
 
-## Data files (TODO: Update/delete for your PROJECT)
+## Data files
 |Data File Name | Brief Description|
 |---------------| -----------------|
-|[example.cvs](./example.csv) | This file contains temperature data. (See report for details.)
-|[another-file](./filename2.csv) | Description ... 
-
-## Application Programming Interfaces (API) (TODO: Update/delete for your PROJECT)
-
-* **New York Times Books API**. The _New York Times_ provides data for Best
-Sellers lists and the books that have been reviewed in the New York Times. An overview of the API that we use in our project is available here: [Books API](https://developer.nytimes.com/docs/books-product/1/overview). For more about developing apps with New York Times data see: [NYTimes Developers](https://developer.nytimes.com/).
-
-# Developer notes: About the `/data` Directory (TODO: Read and delete this section)
-
-* Use the `/data` directory to store any data that you using in your project (for example, CSV files)
-* Edit this `README.md` file and summarize your data files
-* If you are using APIs to access data, summarize them, providing specific information
-* See examples above.
-* Please remember your audience (prospective employers, open source colleagues, TAs, Instructors). Therefore, 
-aim for clarity and conciseness.
-* When done, be sure to delete these NOTE sections and the example CSV file (which are intended for you, of course, not your audience!)
+|[Vaccine_Hesitancy_for_COVID-19__County_and_local_estimates.csv](./Vaccine_Hesitancy_for_COVID-19__County_and_local_estimates.csv) | This file contains county-level data on the proportion of people hesitant receiving a vaccine fo COVID-19. (See report for details.)
+|[Provisional_COVID-19_Death_Counts_in_the_United_States_by_County.csv](./Provisional_COVID-19_Death_Counts_in_the_United_States_by_County.csv) | Dataset contains data on the amount of deaths attributed to COVID-19 on a county-level basis.
+| [mask-use-by-county.csv](./mask-use-by-county.csv) | This dataset contains results for a survey conducted by New York Times that asked about mask usage in US counties during the COVID-19 pandemic
+| [countypres_2000-2020.csv](./countypres_2000-2020.csv) | This dataset contains vote counts for presidential elections on a county-level basis along with total eligible voter population.

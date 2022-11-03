@@ -14,24 +14,32 @@ Our main question is how do political ideologies affect the containment and neut
 **Key Words**: COVID-19; political leaning; vaccine hesitancy; prevention measures; death count.
 
 ### Introduction
-Covid 19 has been a prominent issue for the world in the last two years. With the total number of deaths reaching about 7 million worldwide, covid 19 has been characterized as one of the worst pandemics in modern human history. As it finally dwindles down in 2022, data regarding death counts, vaccine rates/hesitancy, etc. have been gathered in substantial numbers. For our project we aim to analyze how political views affect vaccine hesitancy, state policy regarding covid, and death counts. In the past few years, public health has increasingly become a divisive political issue despite its reliance on factual data collection and analysis. With our analysis we hope to identify a correlation between political ideology and the outcomes with covid.
+Covid 19 has been a prominent issue for the world in the last two years. With the total number of deaths reaching about 7 million worldwide, covid 19 has been characterized as one of the worst pandemics in modern human history. As it finally dwindles down in 2022, data regarding death counts, vaccine rates/hesitancy, etc. have been gathered in substantial numbers. For our project we aim to analyze how political views affect vaccine hesitancy, state policy regarding covid, and death counts. In the past few years, public health has increasingly become a divisive political issue despite its reliance on factual data collection and analysis. With our analysis, we hope to identify a correlation between political ideology, precautions taken, and covid outcomes.
 
 ### Problem domain
-**Project Framing**: create data visualizations for each data set and use political beliefs as the factor that ties them all together.
+**Project Framing**: Create data visualizations for each data set and use political affiliations as the factor that ties them all together.
 
-**Human Values**: Political beliefs and health/longevity. Political values/beliefs influence all the covid 19 outcomes the project analyzes. Political values usually originate from family, religion, location of residence, gender, etc. People with differing political values will take different actions regarding covid 19, which affects data outcomes. For example, according to the Pew research center, republicans are more likely to see Covid 19 as a minor threat opposed to a severe threat” (Tyson, 2020) which will directly affect what actions are taken in order to combat covid 19. Health and longevity are also a prominent value. When prioritization of health is apparent, people will take further action in maintaining it. In the data sets we analyze what actions states/people took in order to maintain health. Value tensions regarding health may include differing opinions on how one should maintain health (ie: holistically, surgically, medication, etc.).
+**Human Values**: Political beliefs and health/longevity. Political values/beliefs influence all the covid 19 outcomes the project analyzes. Political values usually originate from family, religion, location of residence, gender, etc. People with differing political values will take different actions regarding covid 19, which affects data outcomes. For example, according to the Pew research center, "republicans are more likely to see Covid 19 as a minor threat opposed to a severe threat” (Tyson, 2020) which will directly affect what actions are taken in order to combat covid 19. Health and longevity are also a prominent value. When prioritization of health is apparent, people will take further action in maintaining it. In the data sets we analyze what actions states/people took in order to maintain health. Value tensions regarding health may include differing opinions on how one should maintain health (ie: holistically, surgically, medication, etc.).
 
 **Direct/Indirect Stakeholders**:
 - _Direct_: healthcare professionals, US residents,
 - _Indirect_: local/federal government, politicians, vaccination companies.
 
-**Possible Harms and Benefits**: One potential benefit from this analysis is the ability to determine how successful a public health intervention might be in certain demographics with the US. A potential harm from our analysis is that third party actors could use the information to target advertising or scams towards specific demographics. Misleading advertising and scams could target susceptible populations based on political leaning and county location data for increased efficacy and damage.
+**Possible Harms and Benefits**: One potential benefit from this analysis is the ability to determine how successful a public health intervention might be in certain demographics within the US. A potential harm from our analysis is that third party actors could use the information to target advertising or scams towards specific demographics. Misleading advertising and scams could target susceptible populations based on political leaning and county location data for increased efficacy and damage.
 
 
 ### Research questions
-1. How does political leaning affect vaccine hesitancy rates on a county level basis?
-2. How does political leaning affect COVID-19 policy decisions (ie. mask mandate, group gathering bans, restaurant/bar closures)
-3. How does political leaning correlate with death rates/death counts on a county level?
+**1. How does political leaning affect vaccine hesitancy  rates on a county level basis?**
+
+Throughout the course of the COVID-19 pandemic, it was well known that political affiliation played a major role in vaccine hesitancy. Most people tend to conform to the social expectations around them. Identifying a correlation between 2020 election data results and vaccine hesitancy may expose the extent to which social expectations play a role in public health efficacy.
+
+**2. How does political leaning affect mask usage on a county level basis?**
+
+In the US, mask usage became a largely divisive issue drawn along ideological differences. Identifying a correlation between the two could allow for a greater understanding of how public health policies failed to adhere among certain demographics. Additionally, identifying a correlation between mask usage and covid mortality rates may provide a greater understanding of how ideology worsened COVID-19 outcomes.
+
+**3. How does political leaning correlate with death rates/death counts on a county level basis?**
+
+This question aims to identify how political leaning and rhetoric may have severally harmed counties and communities. Comparing election results on a county level will help identify how ideology may have influenced recklessness throughout the course of the pandemic.
 
 ### The Dataset
 |Dataset Name | Number of Rows| Number of Columns | Date | Citation |
