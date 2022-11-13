@@ -11,15 +11,15 @@
 ### Abstract
 Our main question is how do political ideologies affect the containment and neutralization of the COVID-19 virus. This is an important question because discovering the effectiveness of political decisions to contain COVID-19 and how imperative it is to learn the effects it has had on the public population. To address this question, we will analyze state policies regarding COVID, public vaccine hesitancy, and death counts resulting from COVID.
 
-**Key Words**: COVID-19; political leaning; vaccine hesitancy; prevention measures; death count.
+**Keywords**: COVID-19; political leaning; vaccine hesitancy; prevention measures; death count.
 
 ### Introduction
 Covid 19 has been a prominent issue for the world in the last two years. With the total number of deaths reaching about 7 million worldwide, covid 19 has been characterized as one of the worst pandemics in modern human history. As it finally dwindles down in 2022, data regarding death counts, vaccine rates/hesitancy, etc. have been gathered in substantial numbers. For our project we aim to analyze how political views affect vaccine hesitancy, state policy regarding covid, and death counts. In the past few years, public health has increasingly become a divisive political issue despite its reliance on factual data collection and analysis. With our analysis, we hope to identify a correlation between political ideology, precautions taken, and covid outcomes.
 
 ### Problem domain
-**Project Framing**: Create data visualizations for each data set and use political affiliations as the factor that ties them all together.
+**Project Framing**: Create data visualizations for each dataset and use political affiliations as the factor that ties them all together.
 
-**Human Values**: Political beliefs and health/longevity. Political values/beliefs influence all the covid 19 outcomes the project analyzes. Political values usually originate from family, religion, location of residence, gender, etc. People with differing political values will take different actions regarding covid 19, which affects data outcomes. For example, according to the Pew research center, "republicans are more likely to see Covid 19 as a minor threat opposed to a severe threat” (Tyson, 2020) which will directly affect what actions are taken in order to combat covid 19. Health and longevity are also a prominent value. When prioritization of health is apparent, people will take further action in maintaining it. In the data sets we analyze what actions states/people took in order to maintain health. Value tensions regarding health may include differing opinions on how one should maintain health (ie: holistically, surgically, medication, etc.).
+**Human Values**: Political beliefs and health/longevity. Political values/beliefs influence all the covid 19 outcomes the project analyzes. Political values usually originate from family, religion, location of residence, gender, etc. People with differing political values will take different actions regarding covid 19, which affects data outcomes. For example, according to the Pew research center, "republicans are more likely to see Covid 19 as a minor threat opposed to a severe threat” (Tyson, 2020) which will directly affect what actions are taken in order to combat covid 19. Health and longevity are also a prominent value. When prioritization of health is apparent, people will take further action in maintaining it. In the datasets we analyze what actions states/people took in order to maintain health. Value tensions regarding health may include differing opinions on how one should maintain health (ie: holistically, surgically, medication, etc.).
 
 **Direct/Indirect Stakeholders**:
 - _Direct_: healthcare professionals, US residents,
@@ -55,11 +55,11 @@ _(a)_ The data was collected by the CDC, The Center for Disease Control and Prev
 
 _(b)_ The CDC is funded federally, so data collection from surveys were funded federally. The government and citizens of the US are likely to benefit from the data. In terms of profit, the government will likely profit in some way.
 
-_(c)_ The CDC has information guidelines in place that ensure quality and personal privacy of data. Yes, the CDC is credible. Data was obtained by researching data sets in relation to covid. Data sources came from surveys funded and affiliated by the government thus, very credible.
+_(c)_ The CDC has information guidelines in place that ensure quality and personal privacy of data. Yes, the CDC is credible. Data was obtained by researching datasets in relation to covid. Data sources came from surveys funded and affiliated by the government thus, very credible.
 
 **Covid policies for states/counties**: Political leaning, covid rates, etc. are all factors that influence what policies and regulations counties have. The more restrictions set for counties, the more the county might be affiliated with one political party that characterizes Covid as an extreme problem (not minor). Consequently more restrictions are put in place.
 
-_(a)_ Data was collected from global data and survey firm Dynata through a series of online interviews. This data was utilized by the New York Times. Data collected from July 2 to July 14 (assuming year was 2020 since the article was written then). The purpose of this data set is to highlight mask use of each county.
+_(a)_ Data was collected from global data and survey firm Dynata through a series of online interviews. This data was utilized by the New York Times. Data collected from July 2 to July 14 (assuming year was 2020 since the article was written then). The purpose of this dataset is to highlight mask use of each county.
 
 _(b)_ Data collected effort funded by the Canadian Pension Plan Investment Board. New York Times profits off the data because of the use of it in their article. As well as the government.
 
@@ -95,14 +95,17 @@ Utilizing datasets to make the project analyze work for covid 19 data and analys
 
 ### Limitations
 The limitations of the datasets are as follows:
- 1. A limitation shown in the data is that it does not solely focus on how policies directly affected the public. The only way to find that information is to correlate one data set with another and infer the knowledge. There is no concrete evidence of how political leanings affected COVID rates and deaths.
- 2. Another limitation is the possibility of misinformation being funneled into the datasets. There are reports of false positive COVID cases and deaths being labeled as being caused by COVID. This information skews the datasets and limits the validity of data and analysis.
- 3. A final limitation of the datasets is that it focuses on a general public, it does not take into account race, ethnicity, gender, financial status. This could lead to missing data in the sets.
+ 1. A limitation shown in the data is that it does not solely focus on how policies directly affected the public. The only way to find that information is to correlate one dataset with another and infer the knowledge. There is no concrete evidence of how political leanings affected COVID rates and deaths.
+ 2. Another limitation is the possibility of misinformation being funneled into the datasets. There are reports of false positive COVID cases and deaths being labeled as being caused by COVID. This information skews the datasets and limits the validity of data and analysis. To fix this we must validate the sources and ensure it is reliable data.
+ 3. A final limitation of the datasets is that it focuses on the general public, it does not take into account race, ethnicity, gender, financial status. This could lead to missing data in the sets. To fix this limitation we must find more specific datasets or find further data on the current dataset.
 
-#### References
+### References
 - Vaccine Hesitancy for COVID-19: County and local estimates. (2021, June 17). Retrieved from https://data.cdc.gov/Vaccinations/Vaccine-Hesitancy-for-COVID-19-County-and-local-es/q9mh-h2tw.
 - albertsun. (2020, July 28). mask-use-by-country. Retrieved from https://github.com/nytimes/covid-19-data/blob/master/mask-use/mask-use-by-county.csv.
 - MIT Election Data and Science Lab, 2018, "County Presidential Election Returns 2000-2020", https://doi.org/10.7910/DVN/VOQCHQ, Harvard Dataverse, V10, UNF:6:pVAMya52q7VM1Pl7EZMW0Q== [fileUNF]
 - https://www.kff.org/coronavirus-covid-19/poll-finding/importance-of-partisanship-predicting-vaccination-status/
 - Provisional COVID-19 Death Counts in the United States by County. (2022, October 26). Retrieved from https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-in-the-United-St/kn79-hsxy.
 - https://www.pewresearch.org/fact-tank/2020/07/22/republicans-remain-far-less-likely-than-democrats-to-view-covid-19-as-a-major-threat-to-public-health/
+
+### Apendix A: Questions
+1. No Questions
