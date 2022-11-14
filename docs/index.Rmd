@@ -17,7 +17,7 @@ The use of this report is to inform those of the correlation between political l
 # Please change or modify the code chunk to produce the desired outcome
 
 ```
-Summary
+The table encompasses all of the data used to create the data visualizations. The table is aggregated by state which summarizes the different values for each state in regards to COVID outcomes and effects.
 
 ### Chart 1
 ```{r chart 1, echo = FALSE, include = TRUE, message = FALSE}
