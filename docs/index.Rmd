@@ -5,6 +5,7 @@ date: "11/13/22"
 output: html_document
 ---
 ```{r setup, include = FALSE}
+library(tidyverse)
 source("../source/index_data.R")
 ```
 # Summary
@@ -19,10 +20,13 @@ The use of this report is to inform those of the correlation between political l
 Summary
 
 ### Chart 1
-```{r chart 1, echo = FALSE, include = TRUE}
+```{r chart 1, echo = FALSE, include = TRUE, message = FALSE}
 # Here display the code to produce chart 1
 # Please change or modify the code chunk to produce the desired outcome
+source("../source/state_death_counts.R")
 
+ggplot(data = state_death_counts) +
+  geom_col(mapping = aes(x = deaths_per_1000000 , y = State))
 ```
 Summary
 

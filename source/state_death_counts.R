@@ -6,6 +6,3 @@ View(final_aggregate_df)
 
 state_death_counts <- final_aggregate_df %>%
   select(State, deaths_per_1000000)
-
-ggplot(data = state_death_counts) +
-  geom_col(mapping = aes(x = deaths_per_1000000 , y = State))
