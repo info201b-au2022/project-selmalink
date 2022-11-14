@@ -40,12 +40,16 @@ percent_adults_vaccinated <- vaccine_hesitancy %>%
 percent_adults_vaccinated
 
 # 2020 election total votes per candidate
-num_votes_trump <- election_results %>%
-  filter(year == 2020, candidate == "DONALD J TRUMP") %>%
-  summarize(total_votes = sum(candidatevotes))
-num_votes_trump
-  
-num_votes_biden <- election_results %>%
-  filter(year == 2020, candidate == "JOSEPH R BIDEN JR") %>%
-  summarize(total_votes = sum(candidatevotes))
-num_votes_biden
+num_votes_trump <- function() {
+  votes_trump <- election_results %>%
+    filter(year == 2020, candidate == "DONALD J TRUMP") %>%
+    summarize(total_votes = sum(candidatevotes))
+  return(prettyNum(votes_trump, big.mark = ",", scientific = FALSE))
+  }
+
+num_votes_biden <- function() {
+  votes_biden <- election_results %>%
+    filter(year == 2020, candidate == "JOSEPH R BIDEN JR") %>%
+    summarize(total_votes = sum(candidatevotes))
+  return(prettyNum(votes_biden, big.mark = ",", scientific = FALSE))
+  }
