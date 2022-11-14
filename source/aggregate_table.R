@@ -1,4 +1,5 @@
-library("dplyr")
+library(tidyverse)
+
 mask_use_df <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-selmalink/main/data/mask-use-by-county.csv")
 mask_use_df <- mask_use_df %>%
   mutate(some_times_to_always = SOMETIMES + FREQUENTLY + ALWAYS, never_to_rarely = NEVER + RARELY) %>%
@@ -50,11 +51,14 @@ final_aggregate_df <- final_df %>%
     total_votes = sum(totalvotes, na.rm = TRUE), 
     biden_total = sum(biden_total_votes, na.rm = TRUE), 
     trump_total = sum(trump_total_votes, na.rm = TRUE), 
-    low_mask = mean(never_to_rarely, na.rm = TRUE), 
-    vaccine_hesitant = mean(total_unsure_to_hesitant, na.rm = TRUE), 
+    low_mask = mean(never_to_rarely, na.rm = TRUE) * 100, 
+    vaccine_hesitant = mean(total_unsure_to_hesitant, na.rm = TRUE) * 100, 
     total_deaths = sum(Deaths.involving.COVID.19, na.rm = TRUE)
     ) %>%
   ungroup() %>%
+  drop_na() %>%
   left_join(state_population_df, by = c("State" = "cap_state")) %>%
-  mutate(deaths_per_1000000 = (total_deaths/POPESTIMATE2021)*100000)
-  
+  mutate(deaths_per_1000000 = (total_deaths/POPESTIMATE2021)*100000,
+         biden_percent = (biden_total/total_votes) * 100,
+         trump_percent = (trump_total/total_votes) * 100
+         )
