@@ -28,7 +28,6 @@ source("../source/state_death_counts.R")
 ggplot(data = state_death_counts) +
   geom_col(mapping = aes(x = deaths_per_1000000 , y = State))
 ```
-#Summary
 The bar chart above illustrates the amount of deaths per one million people resulting from COVID in each state. As seen from the chart, The state that has the most COVID deaths per one million people is Mississippi. Mississippi has about 472.6836 deaths per 1 million people. The state that has the least amount of COVID deaths per one million people is Alaska. Alaska has about 50.67301 deaths per 1 million people. With these observations, states with larger populations located in the southern region of the US will have more COVID deaths, opposed to states with smaller populations located elsewhere in the US.
 
 ### Chart 2
@@ -37,7 +36,6 @@ The bar chart above illustrates the amount of deaths per one million people resu
 # Please change or modify the code chunk to produce the desired outcome
 
 ```
-Summary
 The use of these graphs is to calculate the mask rate in each county by people's frequency of wearing masks from never, rarely, sometimes, frequently and always. Each graph is being output per mask wearing frequency and per county. 
 
 ### Chart 3
