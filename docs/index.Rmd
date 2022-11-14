@@ -38,6 +38,7 @@ The bar chart above illustrates the amount of deaths per one million people resu
 
 ```
 Summary
+The use of these graphs is to calculate the mask rate in each county by people's frequency of wearing masks from never, rarely, sometimes, frequently and always. Each graph is being output per mask wearing frequency and per county. 
 
 ### Chart 3
 ```{r chart 3, echo = FALSE, include = TRUE}
