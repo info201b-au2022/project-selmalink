@@ -4,44 +4,55 @@ author: "Ben Leland, Krithik Duraisamy, Selma Link, Valerie Lam"
 date: "11/13/22"
 output: html_document
 ---
+
 ```{r setup, include = FALSE}
 library(tidyverse)
 source("../source/index_data.R")
 ```
+
 # Summary
+
 The use of this report is to inform those of the correlation between political leaning and containment and neutralization of the COVID-19 virus. Since its discovery in late 2019, COVID-19 has been a growing issue and evaluating the success of efforts to contain it is an important issue. To identify similarities between politics and neutralization efforts multiple points of data will be evaluated. The data being: election results, vaccine, hesitancy, death counts, and mask use. To begin, the election held in 2020 contained vital information for the political leanings of the public. The votes are as such: Donald Trump had `r num_votes_trump()` votes, whereas Joe Biden had `r num_votes_biden()` votes. This states that majority of the US population was leaning towards democrat and higher restrictions on protection against COVID-19. From this, the average percentage of people who actually wore masks can be correlated to political leaning. `r never_mask_avg` percent of people did not choose to wear a mask outdoors, `r sometimes_mask_avg` percent of people sometimes chose to wear a mask, and `r always_mask_avg` percent of people always chose to wear a mask. From this data it can be deduced that 51% of the population chose to wear a mask outdoors correlating to the data that democrats were majority of that population at the time. In contrast, those who chose to not wear masks as often fell ill quicker and easier. The average number of deaths per county in the US from January 1, 2020 to October 22, 2022 was `r avg_covid_deaths`. An idea can be construed that death counts can be correlated to mask usage further proven by political leaning and policies made between 2020 and 2022. Further evidence is needed to prove this and will be produced in visual displays.
 
 ### Table
+
 ```{r table, echo = FALSE, include = TRUE}
 # Here display the code to produce the table
 # Please change or modify the code chunk to produce the desired outcome
 
 ```
+
 The table encompasses all of the data used to create the data visualizations. The table is aggregated by state which summarizes the different values for each state in regards to COVID outcomes and effects.
 
 ### Chart 1
-```{r chart 1, echo = FALSE, include = TRUE, message = FALSE}
+
+```{r chart 1, echo = TRUE, include = False, message = FALSE}
 # Here display the code to produce chart 1
 # Please change or modify the code chunk to produce the desired outcome
 source("../source/state_death_counts.R")
 
-ggplot(data = state_death_counts) +
-  geom_col(mapping = aes(x = deaths_per_1000000 , y = State))
+death_count_plot()
 ```
+
 The bar chart above illustrates the amount of deaths per one million people resulting from COVID in each state. As seen from the chart, The state that has the most COVID deaths per one million people is Mississippi. Mississippi has about 472.6836 deaths per 1 million people. The state that has the least amount of COVID deaths per one million people is Alaska. Alaska has about 50.67301 deaths per 1 million people. With these observations, states with larger populations located in the southern region of the US will have more COVID deaths, opposed to states with smaller populations located elsewhere in the US.
 
 ### Chart 2
+
 ```{r chart 2, echo = FALSE, include = TRUE}
 # Here display the code to produce chart 2
 # Please change or modify the code chunk to produce the desired outcome
 
 ```
-The use of these graphs is to calculate the mask rate in each county by people's frequency of wearing masks from never, rarely, sometimes, frequently and always. Each graph is being output per mask wearing frequency and per county. 
+
+The use of these graphs is to calculate the mask rate in each county by people's frequency of wearing masks from never, rarely, sometimes, frequently and always. Each graph is being output per mask wearing frequency and per county.
 
 ### Chart 3
-```{r chart 3, echo = FALSE, include = TRUE}
-# Here display the code to produce chart 3
-# Please change or modify the code chunk to produce the desired outcome
 
+```{r chart 3, echo = FALSE, include = FALSE, message = FALSE}
+# Here display the code to produce chart 3
+source("../source/scatterplot_matrix.R")
+
+matrix_plot()
 ```
+
 Summary
