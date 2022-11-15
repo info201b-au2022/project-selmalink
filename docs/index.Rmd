@@ -17,6 +17,7 @@ The use of this report is to inform those of the correlation between political l
 
 ### Table
 ## Top Ten States with the Highest Death Rate for COVID-19
+
 ```{r table, echo = FALSE, include = TRUE, message = FALSE}
 # Here display the code to produce the table
 source("../source/aggregate_table.R")
@@ -27,8 +28,7 @@ top_10_deaths <- final_aggregate_df %>%
   arrange(-deaths_per_100000) %>%
   mutate_if(is.numeric, round)
  
-kable(top_10_deaths, col.names = c("State", "Deaths per 100,000", "Low Mask Usage Percent", "Vaccine Hesitancy Percent", "Percentage of Votes for Biden", "Percentage of Votes for Trump"))
-``` 
+kable(top_10_deaths, col.names = c("State", "Deaths per 100,000", "Low Mask Usage Percent", "Vaccine Hesitancy Percent", "Percent of Votes for Biden", "Percent of Votes for Trump"))
 ```
 
 The table encompasses all of the data used to create the data visualizations. The table is aggregated by state which summarizes the different values for each state in regards to COVID outcomes and effects.
@@ -64,4 +64,4 @@ source("../source/scatterplot_matrix.R")
 matrix_plot()
 ```
 
-Summary
+The scatter plot matrix above depicts all the correlations between variables relating to COVID-19 and the 2020 US elections. Each point represents a state. When the percentage of votes for Biden and Trump were plotted against COVID deaths per 100,000, there was a negative correlation with Biden and a positive correlation with Trump. Several similar trends could be noticed with mask usage and vaccine hesitancy. Additionally, vaccine hesitancy and low mask usage both had positive correlations with deaths per 100,000. This is indicative of how rhetoric from the 2020 presidential candidates influenced people to react differently. The scatter plot matrix depicts how states that Trump won with larger margins had less mask usage and increase vaccine hesitancy. Consequently, higher death rates of COVID were reported in those states.
