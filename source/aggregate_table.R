@@ -58,7 +58,7 @@ final_aggregate_df <- final_df %>%
   ungroup() %>%
   drop_na() %>%
   left_join(state_population_df, by = c("State" = "cap_state")) %>%
-  mutate(deaths_per_1000000 = (total_deaths/POPESTIMATE2021)*100000,
+  mutate(deaths_per_100000 = (total_deaths/POPESTIMATE2021)*100000,
          biden_percent = (biden_total/total_votes) * 100,
          trump_percent = (trump_total/total_votes) * 100
          )

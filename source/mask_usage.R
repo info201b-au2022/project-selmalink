@@ -1,24 +1,17 @@
 library("dplyr")
-library(ggplot2)
-library(hrbrthemes)
 
+covid <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-selmalink/main/data/mask-use-by-county.csv")
+national_mask_use <- covid %>%
+  select(c("NEVER", "RARELY", "SOMETIMES", "FREQUENTLY", "ALWAYS")) %>%
+  colMeans()
 
-covid19_data <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-selmalink/main/data/mask-use-by-county.csv")
+make_pie_chart <- function() {
+  lbls <- c("NEVER", "RARELY", "SOMETIMES", "FREQUENTLY", "ALWAYS")
+  pct <- round(national_mask_use/sum(national_mask_use)*100)
+  lbls <- paste(lbls, pct)
+  lbls <- paste0(lbls, "%")
+  pie(national_mask_use, labels = lbls, col = rainbow(length(lbls)),
+      main="National Mask Usage During COVID Pandemic")
+}
 
-covid <- covid19_data
-
-ggplot(covid, aes(x=COUNTYFP, y=NEVER)) + 
-  geom_point(size=0.5) + theme_ipsum()
-
-ggplot(covid, aes(x=COUNTYFP, y=RARELY)) + 
-  geom_point(size=0.5) + theme_ipsum()
- 
-ggplot(covid, aes(x=COUNTYFP, y=SOMETIMES)) + 
-  geom_point(size=0.5) + theme_ipsum()
- 
-ggplot(covid, aes(x=COUNTYFP, y=FREQUENTLY)) + 
-  geom_point(size=0.5) + theme_ipsum()
-
-ggplot(covid, aes(x=COUNTYFP, y=ALWAYS)) + 
-  geom_point(size=0.5) + theme_ipsum()
 
