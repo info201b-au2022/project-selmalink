@@ -4,6 +4,7 @@ library(dplyr)
 library(ggplot2)
 
 source("../source/scatterplot_matrix.R")
+source("https://raw.githubusercontent.com/info201b-au2022/project-selmalink/main/source/aggregate_table.R")
 
 mask_df <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-selmalink/main/data/mask-use-by-county.csv")
 state_df <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-selmalink/main/data/Vaccine_Hesitancy_for_COVID-19__County_and_local_estimates.csv")
@@ -21,6 +22,22 @@ shiny_state_df <- mask_df %>%
     ungroup()
 
 server <- function(input, output) {
+  
+  state_death_data <- reactive({
+    final_aggregate_df %>%
+    filter(deaths_per_100000 > input$mindepth) %>%
+    filter(deaths_per_100000 < input$maxdepth) %>%
+    select(c("deaths_per_100000", "State"))
+})
+
+  output$plot <- renderPlot({
+
+    ggplot(state_death_data()) +
+      geom_col(mapping = aes(deaths_per_100000, reorder(State, -deaths_per_100000), fill = deaths_per_100000)) +
+      #xlim(input$mindepth, input$maxdepth) +
+      labs(title="Histogram for COVID Death Rates by State") +
+      labs(x="COVID Deaths per 100,000", y="States")
+  })
 
   # Function selects for state in reactive function
   state_mask_func <- reactive({
