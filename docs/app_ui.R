@@ -50,7 +50,10 @@ fourth_panel <- tabPanel(
 )
 
 fifth_panel <- tabPanel(
-  "Summary Takeaways"
+  "Summary Takeaways",
+  h3(First takeaway),
+  p("As seen from the histogram depicting covid deaths for each state, The state that has the most COVID deaths per 100,000 people is Mississippi. Mississippi has about 472.6836 deaths per 100,000 people. The state that has the least amount of COVID deaths per 100,000 people is Alaska. Alaska has about 50.67301 deaths per 100,000 people. With these observations, states with larger populations located in the southern region of the US have more COVID deaths, opposed to states with smaller populations located elsewhere in the US. It seems that southern states tend to have more covid doubts and relaxed covid restrictions due to conservative/republican values that are very prominent in southern states.")
+
 )
 
 sixth_panel <- tabPanel(
