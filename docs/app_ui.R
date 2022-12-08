@@ -21,7 +21,6 @@ intro_panel <- tabPanel(
 second_panel <- tabPanel(
   "Covid deaths by state",
 
-  fluidPage(
     sidebarLayout(
       sidebarPanel(
               sliderInput("mindepth", "Min depth:", min = 0, max = 500, value = 0),
@@ -30,8 +29,6 @@ second_panel <- tabPanel(
 
      mainPanel(
       plotOutput("plot")
-    )
-    
     )
   )
 )
