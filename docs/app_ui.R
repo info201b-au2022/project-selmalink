@@ -2,6 +2,7 @@ library(shiny)
 library(tidyverse)
 library(dplyr)
 library(ggplot2)
+library(plotly)
 
 intro_panel <- tabPanel(
   "Introduction"
@@ -12,8 +13,18 @@ second_panel <- tabPanel(
 )
 
 third_panel <- tabPanel(
-  "second visualization"
-)
+  "second visualization",
+  
+  fluidPage(
+  selectInput("select", label = h3("Select box"), 
+              choices = list("Never" = 1, "Rarely" = 2, "Sometimes" = 3, "Frequently" = 4, "Always" = 5 ), 
+              selected = 1),
+  
+  fluidRow(column(3, verbatimTextOutput("value"))),
+  
+  plotOutput("piechart")
+  ))
+
 
 fourth_panel <- tabPanel(
   "third visualization"
@@ -26,6 +37,7 @@ fifth_panel <- tabPanel(
 sixth_panel <- tabPanel(
   "report"
 )
+
 ui <- fluidPage(
     navbarPage(
       title = "Covid 19 and political leaning",
@@ -37,22 +49,5 @@ ui <- fluidPage(
       sixth_panel
     )
   )
-  # Application title
-#   titlePanel("Old Faithful Geyser Data"),
-#   
-#   # Sidebar with a slider input for number of bins 
-#   sidebarLayout(
-#     sidebarPanel(
-#       sliderInput("bins",
-#                   "Number of bins:",
-#                   min = 1,
-#                   max = 50,
-#                   value = 30)
-#     ),
-#     
-#     # Show a plot of the generated distribution
-#     mainPanel(
-#       plotOutput("distPlot")
-#     )
-#   )
-# )
+  
+

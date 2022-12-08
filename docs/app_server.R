@@ -1,13 +1,26 @@
+library(shiny)
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(plotly)
+
 server <- function(input, output) {
-  
-  output$distPlot <- renderPlot({
-    # generate bins based on input$bins from ui.R
-    x    <- faithful[, 2]
-    bins <- seq(min(x), max(x), length.out = input$bins + 1)
-    
-    # draw the histogram with the specified number of bins
-    hist(x, breaks = bins, col = 'darkgray', border = 'white',
-         xlab = 'Waiting time to next eruption (in mins)',
-         main = 'Histogram of waiting times')
+
+  df <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-selmalink/main/data/mask-use-by-county.csv")
+
+  output$piechart <- renderPlot ({
+  pie_graph <- plot_ly(df, labels = ~States, type = 'pie')
+                       pie_graph <- pie_graph %>% layout(title = 'National Mask Usage During COVID Pandemic',
+                                                         xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+                                                         yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
   })
+  
 }
+
+
+
+
+
+
+
+
