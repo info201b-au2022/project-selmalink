@@ -57,7 +57,7 @@ fifth_panel <- tabPanel(
   
   h3("Second takeaway"),
   
-  p("The pie chart calculates the mask usage proportions in the U.S. for each state by people's frequency of wearing masks. Frequency: never, rarely, sometimes, frequently and always. The state with the highest rate of never wearing a mask is North Dakota with 18% of residents never wearing a mask. All of the other frequencies for North Dakota also fall around the range of 20%. The states with the highest mask usages are Hawaii and Delaware, with 82% of residents always wearing a mask when in public. From this data, we can conclude that mask usage is dependent on state policy. Although some southern states may have more relaxed rules about wearing a mask, other states throughout the U.S. also do.")
+  p("The pie chart calculates the mask usage proportions in the U.S. for each state by people's frequency of wearing masks. Frequency: never, rarely, sometimes, frequently and always. The state with the highest rate of never wearing a mask is North Dakota with 18% of residents never wearing a mask. All of the other frequencies for North Dakota also fall around the range of 20%. The states with the highest mask usages are Hawaii and Delaware, with 82% of residents always wearing a mask when in public. From this data, we can conclude that mask usage is dependent on state policy. Although some southern states may have more relaxed rules about wearing a mask, other states throughout the U.S. also do."),
   
   h3("Third takeaway"),
   
