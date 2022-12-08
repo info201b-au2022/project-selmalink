@@ -79,7 +79,7 @@ server <- function(input, output) {
       geom_point() +
       geom_smooth() +
       labs( 
-        title = paste(input$x_var, "v.s.", input$y_var),
+        title = paste(input$x_var, "v.s.", input$y_var, "by U.S. State (2020)"),
         x = toupper(input$x_var),
         y = toupper(input$y_var)
         )
