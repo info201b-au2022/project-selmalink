@@ -1,0 +1,14 @@
+name: covidandpolitics
+title: covidandpolitics
+username:
+account: selmalink
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7844972
+bundleId: 6609035
+url: https://selmalink.shinyapps.io/covidandpolitics/
+when: 1670480118.22214
+lastSyncTime: 1670480118.22216
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: index.html|index.Rmd|p01-proposal.md|README.md
