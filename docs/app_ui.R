@@ -23,7 +23,10 @@ third_panel <- tabPanel(
   fluidRow(column(3, verbatimTextOutput("value"))),
   
   plotOutput("piechart")
-  ))
+
+  )
+)
+
 
 
 fourth_panel <- tabPanel(
