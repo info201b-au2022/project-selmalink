@@ -12,6 +12,8 @@ second_panel <- tabPanel(
   "first visualization"
 )
 
+source("https://raw.githubusercontent.com/info201b-au2022/project-selmalink/main/data/mask-use-by-county.csv")
+
 third_panel <- tabPanel(
   "second visualization",
   
