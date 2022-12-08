@@ -14,7 +14,7 @@ y_input <- selectInput("y_var", label = h3("Select Y Variable"), choices=choice_
 intro_panel <- tabPanel(
   "Introduction",
   h1("COVID-19 in Correlation to Politics"),
-  img("COVID Model", src = "source/covid19-cdc.png"),
+  img(src = "https://raw.githubusercontent.com/info201b-au2022/project-selmalink/fbd0af81e63cfe5590bf82e7d6f53e6aced4e4f9/source/covid19-cdc.png", height="75%", width="75%"),
   p("This report will distinguish the correlation between political leaning and containment and neutralization of the COVID-19 virus. Since its discovery in late 2019, COVID-19 has been a growing issue and evaluating the success of efforts to contain it is an important issue. To identify similarities between politics and neutralization efforts multiple points of data will be analyzed. The key goal of the visualization is to let viewers examine how political beliefs impact vaccination hesitancy, state policy regarding covid, and death counts. Despite its emphasis on factual data gathering and analysis, public health has developed into a more contentious political topic during the last few years. With the help of our study, we aim to discover a connection between political ideology, precautions taken, and covid outcomes.")
 )
 
@@ -91,7 +91,7 @@ sixth_panel <- tabPanel(
   p("This question aims to identify how political leaning and rhetoric may have severally harmed counties and communities. Comparing election results on a county level will help identify how ideology may have influenced recklessness throughout the course of the pandemic."),
   # The Dataset
   h3("The Dataset"),
-  img(src = "source/The-Dataset.jpg"),
+  img(src = "https://github.com/info201b-au2022/project-selmalink/blob/fbd0af81e63cfe5590bf82e7d6f53e6aced4e4f9/source/The-Dataset.jpg?raw=true", height="75%", width="75%"),
   #
   p(strong("Vaccine Hesitancy for COVID:"), "One of the main covid outcomes the project analyzes is hesitancy. The data from political leaning is in direct correlation with what counties are less/more hesitant. Higher hesitancy might be in relation to a stronger political party or vice versa."),
   p(em("(a)"), "The data was collected by the CDC, The Center for Disease Control and Prevention. Data was collected from April 9, 2021 to June 17, 2021. The purpose is to analyze covid vaccine hesitancy on a county level."),
