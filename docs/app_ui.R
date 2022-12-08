@@ -58,6 +58,10 @@ fifth_panel <- tabPanel(
   h3("Second takeaway"),
   
   p("The pie chart calculates the mask usage proportions in the U.S. for each state by people's frequency of wearing masks. Frequency: never, rarely, sometimes, frequently and always. The state with the highest rate of never wearing a mask is North Dakota with 18% of residents never wearing a mask. All of the other frequencies for North Dakota also fall around the range of 20%. The states with the highest mask usages are Hawaii and Delaware, with 82% of residents always wearing a mask when in public. From this data, we can conclude that mask usage is dependent on state policy. Although some southern states may have more relaxed rules about wearing a mask, other states throughout the U.S. also do.")
+  
+  h3("Third takeaway"),
+  
+  p("From the Scatter plot we can determine the mask usage, the vaccine hesitancy, and deaths per 100,000 from Biden supporters and Trump supporters. The scatter plot highlights that Biden supporters will more often have a higher mask usage, a lower vaccine hesitancy, and lower deaths per 100,00 people rate. For Trump supporters the mask use is often lower, the vaccine hesitancy is higher, and the deaths per 100,000 is higher as well. From this data, we can conclude that Biden supporters will follow higher state regulations which inturn will have lower detrimental Covid outcomes. In regards to Trump supporters and the relative location of their residence (south), Covid restrictions are lower which in turn contribute to higher death rates.")
 )
 
 sixth_panel <- tabPanel(
