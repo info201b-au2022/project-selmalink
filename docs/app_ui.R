@@ -12,7 +12,10 @@ y_input <- selectInput("y_var", label = h3("Select Y Variable"), choices=choice_
 
 
 intro_panel <- tabPanel(
-  "Introduction"
+  "Introduction",
+  h1("COVID-19 in Correlation to Politics"),
+  img("COVID Model", src = "covid19-cdc.png"),
+  p("This report will distinguish the correlation between political leaning and containment and neutralization of the COVID-19 virus. Since its discovery in late 2019, COVID-19 has been a growing issue and evaluating the success of efforts to contain it is an important issue. To identify similarities between politics and neutralization efforts multiple points of data will be analyzed. The key goal of the visualization is to let viewers examine how political beliefs impact vaccination hesitancy, state policy regarding covid, and death counts. Despite its emphasis on factual data gathering and analysis, public health has developed into a more contentious political topic during the last few years. With the help of our study, we aim to discover a connection between political ideology, precautions taken, and covid outcomes.")
 )
 
 second_panel <- tabPanel(
