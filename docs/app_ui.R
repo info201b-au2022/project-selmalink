@@ -52,8 +52,12 @@ fourth_panel <- tabPanel(
 fifth_panel <- tabPanel(
   "Summary Takeaways",
   h3("First takeaway"),
-  p("As seen from the histogram depicting covid deaths for each state, The state that has the most COVID deaths per 100,000 people is Mississippi. Mississippi has about 472.6836 deaths per 100,000 people. The state that has the least amount of COVID deaths per 100,000 people is Alaska. Alaska has about 50.67301 deaths per 100,000 people. With these observations, states with larger populations located in the southern region of the US have more COVID deaths, opposed to states with smaller populations located elsewhere in the US. It seems that southern states tend to have more covid doubts and relaxed covid restrictions due to conservative/republican values that are very prominent in southern states.")
-
+  
+  p("As seen from the histogram depicting covid deaths for each state, The state that has the most COVID deaths per 100,000 people is Mississippi. Mississippi has about 472.6836 deaths per 100,000 people. The state that has the least amount of COVID deaths per 100,000 people is Alaska. Alaska has about 50.67301 deaths per 100,000 people. With these observations, states with larger populations located in the southern region of the US have more COVID deaths, opposed to states with smaller populations located elsewhere in the US. It seems that southern states tend to have more covid doubts and relaxed covid restrictions due to conservative/republican values that are very prominent in southern states."),
+  
+  h3("Second takeaway"),
+  
+  p("The pie chart calculates the mask usage proportions in the U.S. for each state by people's frequency of wearing masks. Frequency: never, rarely, sometimes, frequently and always. The state with the highest rate of never wearing a mask is North Dakota with 18% of residents never wearing a mask. All of the other frequencies for North Dakota also fall around the range of 20%. The states with the highest mask usages are Hawaii and Delaware, with 82% of residents always wearing a mask when in public. From this data, we can conclude that mask usage is dependent on state policy. Although some southern states may have more relaxed rules about wearing a mask, other states throughout the U.S. also do.")
 )
 
 sixth_panel <- tabPanel(
