@@ -9,7 +9,22 @@ intro_panel <- tabPanel(
 )
 
 second_panel <- tabPanel(
-  "first visualization"
+  "first visualization",
+
+  fluidPage(
+    sidebarLayout(
+      sidebarPanel(
+            # sliderInput("slider", label = h3("Slider Range"), min = 0, 
+            #             max = 500, value = c(0, 500))
+              sliderInput("mindepth", "Min depth:", min = 0, max = 500, value = 0),
+              sliderInput("maxdepth", "Max depth:", min = 0, max = 500, value = 500)
+        ),
+
+     mainPanel(
+      plotOutput("plot")
+    )
+    )
+  )
 )
 
 source("https://raw.githubusercontent.com/info201b-au2022/project-selmalink/main/data/mask-use-by-county.csv")
