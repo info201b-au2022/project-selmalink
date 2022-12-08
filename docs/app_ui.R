@@ -4,50 +4,34 @@ library(dplyr)
 library(ggplot2)
 library(plotly)
 
+source("../source/scatterplot_matrix.R")
+
+choice_names <- colnames(matrix_df)
+x_input <-  selectInput("x_var", label = h3("Select X Variable"), choices=choice_names)
+y_input <- selectInput("y_var", label = h3("Select Y Variable"), choices=choice_names)
+
+
 intro_panel <- tabPanel(
   "Introduction"
 )
 
 second_panel <- tabPanel(
-  "first visualization",
-
-  fluidPage(
-    sidebarLayout(
-      sidebarPanel(
-            # sliderInput("slider", label = h3("Slider Range"), min = 0, 
-            #             max = 500, value = c(0, 500))
-              sliderInput("mindepth", "Min depth:", min = 0, max = 500, value = 0),
-              sliderInput("maxdepth", "Max depth:", min = 0, max = 500, value = 500)
-        ),
-
-     mainPanel(
-      plotOutput("plot")
-    )
-    )
-  )
+  "first visualization"
 )
 
-source("https://raw.githubusercontent.com/info201b-au2022/project-selmalink/main/data/mask-use-by-county.csv")
 
 third_panel <- tabPanel(
   "second visualization",
-  
-  fluidPage(
-  selectInput("select", label = h3("Select box"), 
-              choices = list("Never" = 1, "Rarely" = 2, "Sometimes" = 3, "Frequently" = 4, "Always" = 5 ), 
-              selected = 1),
-  
-  fluidRow(column(3, verbatimTextOutput("value"))),
-  
+  selectInput("state", label = h3("Select State"),
+              choices = toupper(state.name)),
   plotOutput("piechart")
-
-  )
 )
 
-
-
 fourth_panel <- tabPanel(
-  "third visualization"
+  "Scatter Plots by Variables",
+  x_input,
+  y_input,
+  plotOutput(outputId = "scat_plot")
 )
 
 fifth_panel <- tabPanel(
