@@ -20,6 +20,8 @@ shiny_state_df <- function() {
     ungroup()
 }
 
+source("https://raw.githubusercontent.com/info201b-au2022/project-selmalink/main/source/aggregate_table.R")
+
 server <- function(input, output) {
 
   output$piechart <- renderPlot ({
@@ -36,6 +38,23 @@ server <- function(input, output) {
     lbls <- paste0(lbls, "%")
     pie(national_mask_use, labels = lbls, col = rainbow(length(lbls)),
         main="National Mask Usage During COVID Pandemic")
+  })
+  
+  
+  state_death_data <- reactive({
+    final_aggregate_df %>%
+    filter(deaths_per_100000 > input$mindepth) %>%
+    filter(deaths_per_100000 < input$maxdepth) %>%
+    select(c("deaths_per_100000", "State"))
+})
+
+  output$plot <- renderPlot({
+
+    ggplot(state_death_data()) +
+      geom_col(mapping = aes(deaths_per_100000, reorder(State, -deaths_per_100000), fill = deaths_per_100000)) +
+      #xlim(input$mindepth, input$maxdepth) +
+      labs(title="Histogram for COVID Death Rates by State") +
+      labs(x="COVID Deaths per 100,000", y="States")
   })
   
 }
