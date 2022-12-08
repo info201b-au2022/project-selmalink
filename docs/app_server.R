@@ -2,6 +2,7 @@ library(shiny)
 library(tidyverse)
 library(dplyr)
 library(ggplot2)
+library(GGally)
 
 source("https://raw.githubusercontent.com/info201b-au2022/project-selmalink/main/source/scatterplot_matrix.R")
 source("https://raw.githubusercontent.com/info201b-au2022/project-selmalink/main/source/aggregate_table.R")
