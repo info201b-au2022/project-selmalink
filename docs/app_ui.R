@@ -19,7 +19,7 @@ intro_panel <- tabPanel(
 )
 
 second_panel <- tabPanel(
-  "Covid deaths by state",
+  "Covid Deaths by State",
 
     sidebarLayout(
       sidebarPanel(
@@ -35,7 +35,7 @@ second_panel <- tabPanel(
 
 
 third_panel <- tabPanel(
-  "second visualization",
+  "Mask Usage by State",
   selectInput("state", label = h3("Select State"),
               choices = toupper(state.name)),
   plotOutput("piechart")
@@ -49,7 +49,7 @@ fourth_panel <- tabPanel(
 )
 
 fifth_panel <- tabPanel(
-  "summary"
+  "Summary Takeaways"
 )
 
 sixth_panel <- tabPanel(
